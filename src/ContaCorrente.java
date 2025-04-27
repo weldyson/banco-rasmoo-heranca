@@ -4,4 +4,9 @@ public class ContaCorrente extends Conta {
         super(agencia, numero, titular);
     }
 
+    @Override
+    public boolean sacar(double valor) {
+        double novoValor = valor + 2;
+        return super.sacar(novoValor);
+    }
 }
