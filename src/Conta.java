@@ -21,8 +21,8 @@ public class Conta {
         this.saldo += valor;
     }
 
-    public boolean sacar(double valor){
-        if(this.saldo >= valor) {
+    public boolean sacar(double valor) {
+        if (this.saldo >= valor) {
             this.saldo -= valor;
             return true;
         } else {
@@ -32,7 +32,7 @@ public class Conta {
 
     public void transferir(double valor, Conta destino) {
         boolean conseguiuSacar = this.sacar(valor);
-        if(conseguiuSacar) {
+        if (conseguiuSacar) {
             destino.depositar(valor);
         }
     }
@@ -43,10 +43,12 @@ public class Conta {
         return saldo;
     }
 
-    public int getAgencia(){
+    public int getAgencia() {
         return this.agencia;
 
-    }  public int getNumero(){
+    }
+
+    public int getNumero() {
         return this.numero;
 
     }
@@ -56,12 +58,12 @@ public class Conta {
     }
 
     public void setNumero(int numero) {
-        if(agencia > 0 ) {
+        if (agencia > 0) {
             this.numero = numero;
         }
     }
 
-    public  Cliente getTitular() {
+    public Cliente getTitular() {
         return this.titular;
     }
 
@@ -73,6 +75,15 @@ public class Conta {
         return Conta.total;
     }
 
-
+    @Override
+    public String toString() {
+        return "Conta{" +
+                "agencia=" + agencia +
+                ", numero=" + numero +
+                ", titular=" + titular +
+                ", saldo=" + saldo +
+                '}';
+    }
 }
+
 

@@ -2,16 +2,16 @@
 
 public class Cliente {
 
-        private String nome;
-        private String cpf;
-        private String profissao;
-        private double salario;
+    private String nome;
+    private String cpf;
+    private String profissao;
+    private double salario;
 
 
-        public  Cliente(String nome, String cpf){
-            this.nome = nome;
-            this.cpf = cpf;
-        }
+    public Cliente(String nome, String cpf) {
+        this.nome = nome;
+        this.cpf = cpf;
+    }
 
     public Cliente() {
 
@@ -47,6 +47,14 @@ public class Cliente {
 
     public void setSalario(double salario) {
         this.salario = salario;
+    }
+
+    @Override
+    public String toString() {
+        return "Cliente{" +
+                "cpf='" + cpf + '\'' +
+                ", nome='" + nome + '\'' +
+                '}';
     }
 }
 
