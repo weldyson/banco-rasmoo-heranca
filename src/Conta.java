@@ -1,4 +1,4 @@
-public class Conta {
+public abstract class Conta {
     private int agencia;
     private int numero;
     private Cliente titular; // Inicializando diretamente
