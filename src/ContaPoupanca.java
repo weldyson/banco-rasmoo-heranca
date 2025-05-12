@@ -3,4 +3,9 @@ public class ContaPoupanca extends Conta {
         super(agencia, numero, titular);
     }
 
+
+    @Override
+    public void gerarExtrato() {
+        System.out.println("Gerando extrato para conta poupança");
+    }
 }

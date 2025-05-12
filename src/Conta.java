@@ -37,6 +37,9 @@ public abstract class Conta {
         }
     }
 
+    public abstract void gerarExtrato();
+
+
     // Métodos Getters e Setters
 
     public double getSaldo() {
