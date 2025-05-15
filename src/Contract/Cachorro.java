@@ -1,0 +1,41 @@
+package Contract;
+
+public class Cachorro extends  Mamifero{
+
+    private String raca;
+    private String porte;
+
+    public Cachorro(String raca) { this.raca = raca; }
+
+    public  Cachorro(String raca, String porte){
+
+        this.raca = raca;
+        this.porte = porte;
+    }
+
+    @Override
+
+    public void alimentar() {}
+
+
+    @Override
+
+    public void respirar() {}
+
+    @Override
+
+    public void locomover() {}
+
+
+    @Override
+
+    public void amamentar() {}
+
+    public String getRaca() {return raca;}
+    public void setRaca(String raca) {this.raca = raca;}
+
+    public String getPorte() {return porte;}
+    public void setPorte(String porte) {this.porte = porte;}
+
+
+}
