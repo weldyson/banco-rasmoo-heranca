@@ -1,4 +1,10 @@
 package Contract;
 
-public class Estimacao {
+public abstract interface   Estimacao {
+
+     void brincar();
+
+     void passear();
+
+
 }

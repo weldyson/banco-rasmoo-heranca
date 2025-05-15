@@ -1,6 +1,6 @@
 package Contract;
 
-public class Cachorro extends  Mamifero{
+public class Cachorro extends  Mamifero implements Estimacao, Domestico {
 
     private String raca;
     private String porte;
@@ -31,11 +31,27 @@ public class Cachorro extends  Mamifero{
 
     public void amamentar() {}
 
+
+    @Override
+    public void brincar() {
+
+    }
+
+    @Override
+    public void passear() {
+
+    }
+    @Override
+    public void cuidar() {
+
+    }
+
     public String getRaca() {return raca;}
     public void setRaca(String raca) {this.raca = raca;}
 
     public String getPorte() {return porte;}
     public void setPorte(String porte) {this.porte = porte;}
+
 
 
 }
